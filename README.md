@@ -14,7 +14,7 @@ The repo currently includes:
 
 Both projects follow the same engineering pattern:
 
-1. **Academic R version** — exploratory, concept‑focused  
+1. **[Academic R version](https://github.com/niecestroa/acad-survival-analysis)** — exploratory, concept‑focused  
 2. **Professional R pipeline** — modular, automated, reproducible  
 3. **SAS translation** — clinical‑grade, regulatory‑aligned  
 4. **Python implementation** — modern, scriptable analytics  
