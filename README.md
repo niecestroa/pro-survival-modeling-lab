@@ -1,16 +1,4 @@
-Aaron, here is your **full, polished, senior‑level professional README** for the **pro‑survival-analysis** repository — fully integrated with:
-
-- your **academic → professional → cross‑language pipeline evolution**,  
-- your **German Breast Cancer + Census survival projects**,  
-- your **ASA Traveling Course future‑work section**,  
-- and your **professional tags + description**.
-
-This is written to look like a flagship portfolio project for a biostatistics / data‑science role.  
-You can paste this directly into your repo.
-
----
-
-# **pro‑survival-analysis**  
+# Survival Analysis Modeling Lab
 Advanced, multi‑language survival‑analysis pipelines using ASA‑aligned methods, including Cox PH modeling, Kaplan–Meier estimation, Weibull regression, diagnostics, and reproducible time‑to‑event workflows.
 
 ---
