@@ -1,4 +1,4 @@
-# Survival Analysis Project  
+# German Breast Cancer Survival Analysis
 
 # Abstract
 This project traces the full evolution of a survival‑analysis workflow from its origins in graduate‑level coursework to a fully engineered, cross‑language analytical pipeline. Beginning with exploratory R scripts focused on learning statistical concepts, the work was systematically refactored into a modular, automated, and reproducible R pipeline aligned with professional data‑science and clinical‑research standards. The pipeline was then translated into SAS to mirror validated, audit‑ready workflows used in pharmaceutical and regulatory environments, and subsequently implemented in Python to demonstrate modern, scriptable analytics and cross‑platform reproducibility. Across all implementations, the project performs standardized data preparation, Kaplan–Meier estimation, Cox proportional‑hazards modeling, Weibull regression, diagnostic evaluation, and structured model selection. The result is a transparent, maintainable, and multi‑language survival‑analysis framework that highlights both statistical expertise and engineering maturity.
@@ -30,7 +30,7 @@ This version emphasizes **learning the methods**, understanding model behavior, 
 
 ---
 
-# Professional Version — R  
+# Professional Version — R, Python, SAS
 ### Modular, Automated, Reproducible Pipeline
 
 The **professional R** folder contains a fully engineered survival‑analysis pipeline built after the academic work was completed. It restructures the entire analysis into a modern, production‑ready workflow:
