@@ -5,7 +5,7 @@ This project traces the full evolution of a survival‑analysis workflow from it
 
 ---
 
-### Academic → Professional → Cross‑Language Workflow Evolution
+### Academic → Professional => Cross‑Language Workflow Evolution
 
 This project demonstrates my progression from **academic survival‑analysis coursework** to a **professional, modular, reproducible analysis pipeline** implemented across **R, SAS, and Python**.  
 
@@ -112,5 +112,5 @@ This project serves as:
 - A transparent record of my **growth** as a biostatistician and data scientist  
 - A demonstration of how academic work can be refactored into **industry‑aligned pipelines**  
 - A portfolio example of survival‑analysis modeling, diagnostics, and workflow engineering  
-- A showcase of **cross‑language mastery** (R → SAS → Python)  
-- A template for future projects following the same academic → professional → multi‑language structure  
+- A showcase of **cross‑language mastery** (R => SAS => Python)  
+- A template for future projects following the same academic => professional => multi‑language structure  
