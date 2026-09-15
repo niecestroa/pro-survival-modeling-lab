@@ -1,4 +1,4 @@
-# Survival Analysis Modeling Lab
+# Survival Analysis Modeling Lab  
 Advanced, multi‑language survival‑analysis pipelines using ASA‑aligned methods, including Cox PH modeling, Kaplan–Meier estimation, Weibull regression, diagnostics, and reproducible time‑to‑event workflows.
 
 ---
@@ -14,7 +14,7 @@ The repo currently includes:
 
 Both projects follow the same engineering pattern:
 
-1. **[Academic R version](https://github.com/niecestroa/acad-survival-analysis)** — exploratory, concept‑focused  
+1. **Academic R version** — exploratory, concept‑focused  
 2. **Professional R pipeline** — modular, automated, reproducible  
 3. **SAS translation** — clinical‑grade, regulatory‑aligned  
 4. **Python implementation** — modern, scriptable analytics  
@@ -102,37 +102,66 @@ This version highlights **modern analytics engineering** and cross‑platform re
 
 ---
 
-# **Future Work — ASA Tree‑Based Machine Learning Methods**
+# **ASA Tree‑Based Machine Learning Methods (Completed)**
 
-This repository will expand using methods from the **ASA Traveling Course: Tree‑Based Machine Learning Methods** by **Hemant Ishwaran** and **Min Lu** (University of Miami).
+This repository also includes a full implementation of the  
+**ASA Traveling Course: Tree‑Based Machine Learning Methods**  
+by **Hemant Ishwaran** and **Min Lu** (University of Miami).
 
-The ASA guide notes:
+The ASA guide states:
 
 > “RF‑SRC supplies unified forests for regression, classification, survival, and competing risks; VarPro supplies observed‑data variable priority; SGT supplies multivariate geometric tree splits; and RHF extends forest modeling to time‑varying hazard estimation.”
 
-Planned enhancements:
+All components listed in the ASA ecosystem have been **successfully integrated** into the master workflow.
 
-### **Random Survival Forest Extensions (RF‑SRC)**
+> **Note:**  
+> All ASA implementations in this repository are currently written **exclusively in R**.  
+> Equivalent Python implementations have **not yet been developed**, as the ASA ecosystem (RF‑SRC, VarPro, SGT, RHF) is presently available only in R.
+
+---
+
+## **Random Survival Forest Extensions (RF‑SRC) — Completed**
 - Log‑rank, Brier‑score gradient, and log‑rank‑score split rules  
 - OOB CRPS and time‑dependent performance metrics  
-- Competing‑risk survival forests  
+- Survival, regression, classification, multivariate, and competing‑risk forests  
+- Full compatibility with GBCS dataset via ASA‑ready preprocessing  
 
-### **VarPro Variable Selection**
+---
+
+## **VarPro Variable Selection — Completed**
 - Observed‑data rule‑release variable priority  
 - Case‑specific iVarPro importance  
+- SHAP‑style iVarPro summaries  
 - Unsupervised UVarPro  
+- Cross‑validated VarPro (cv.varpro)  
+- Liberal, conservative, and entropy‑based importance measures  
 
-### **Super Greedy Trees (SGT)**
+---
+
+## **Super Greedy Trees (SGT) — Completed**
 - Geometric split dictionaries  
-- Hyperplane and quadratic splits  
-- Local polynomial contributions  
+- Hyperplane and higher‑order split families  
+- Local polynomial and lasso‑based contributions  
+- hcut tuning and basis‑function filtering  
+- SGT model explainers (beta, partial effects)  
 
-### **Random Hazard Forests (RHF)**
+---
+
+## **Random Hazard Forests (RHF) — Completed**
 - Time‑varying hazard estimation  
-- Longitudinal survival modeling  
+- Counting‑process survival modeling  
 - Time‑localized variable importance  
+- Smoothed hazard curves  
+- Time‑dependent AUC‑t evaluation  
 
-These additions will align the repo with the full ASA ecosystem and demonstrate **tree‑based survival modeling across R, SAS, and Python**.
+---
+
+## **Status**
+All ASA Traveling Course components — RF‑SRC, VarPro, SGT, and RHF — are now fully implemented, documented, and integrated into the master workflow. The repository demonstrates **tree‑based survival modeling across regression, classification, survival, competing risks, geometric trees, and hazard forests**, providing a complete end‑to‑end ecosystem aligned with the ASA curriculum.
+
+> **R‑only note:**  
+> The ASA ecosystem is currently implemented only in R.  
+> Python support will be added if and when official ASA packages become available.
 
 ---
 
