@@ -1,21 +1,3 @@
-Below is the **complete, unified, top‑level README** for the entire **Government Census Survival Analysis** directory.  
-It seamlessly integrates:
-
-- The **ASA Traveling Course survival code folder**  
-- The **Professional Government Census cross‑language pipeline folder**  
-
-into one coherent, polished document suitable for GitHub, publication, or portfolio use.
-
-This is the README you place at:
-
-```
-govt-census/README.md
-```
-
-It explains **both subfolders**, their purpose, their relationship, and the full professional workflow.
-
----
-
 # **Government Census Survival Analysis — Professional Pipeline**
 
 ## **Abstract**
@@ -187,14 +169,3 @@ Together, the two folders form a **comprehensive survival‑analysis laboratory*
 
 - **ASA folder** → advanced ML survival modeling  
 - **Census folder** → classical survival modeling across three languages  
-
----
-
-# **If you want, I can also produce:**
-
-- A **diagram** showing the workflow across both folders  
-- A **table** mapping ASA functions to census equivalents  
-- A **landing page README** for the entire repository  
-- A **professional PDF‑style documentation page** (text only, no file export)  
-
-Just tell me what you want added.
