@@ -1,4 +1,4 @@
-# **README — Surv Code w ASA**
+# **Government Survival Code with ASA**
 
 ## **Overview**
 This directory contains a fully‑modular survival‑analysis pipeline adapted from the **ASA Traveling Course: “Tree‑Based Machine Learning Methods”**, originally demonstrated on the **German PBC276 dataset**.  
