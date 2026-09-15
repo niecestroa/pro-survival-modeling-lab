@@ -1,44 +1,58 @@
-# German Breast Cancer Survival Analysis — Professional Pipeline  
-# Cross‑Language Survival Analysis Workflow
+# German Breast Cancer Survival Analysis
 
-## Overview
-This project contains the **professional, pipeline‑driven implementation** of the German Breast Cancer survival analysis. The work began as a traditional academic project written entirely in **R**, then evolved into a **modular R pipeline**, and was later **translated into SAS and Python** to demonstrate cross‑platform reproducibility and industry‑aligned statistical programming.
-
-The result is a fully engineered, multi‑language survival‑analysis workflow that mirrors real‑world clinical and regulatory environments.
+# Abstract
+This project traces the full evolution of a survival‑analysis workflow from its origins in graduate‑level coursework to a fully engineered, cross‑language analytical pipeline. Beginning with exploratory R scripts focused on learning statistical concepts, the work was systematically refactored into a modular, automated, and reproducible R pipeline aligned with professional data‑science and clinical‑research standards. The pipeline was then translated into SAS to mirror validated, audit‑ready workflows used in pharmaceutical and regulatory environments, and subsequently implemented in Python to demonstrate modern, scriptable analytics and cross‑platform reproducibility. Across all implementations, the project performs standardized data preparation, Kaplan–Meier estimation, Cox proportional‑hazards modeling, Weibull regression, diagnostic evaluation, and structured model selection. The result is a transparent, maintainable, and multi‑language survival‑analysis framework that highlights both statistical expertise and engineering maturity.
 
 ---
 
-## Project Evolution  
-### **1. Academic Beginning — R (Exploratory Coursework)**
-The project originally started as a graduate‑level survival analysis assignment written in **base R**:
+### Academic => Professional => Cross‑Language Workflow Evolution
 
-- Sequential, line‑by‑line scripts  
-- Manual model fitting  
-- Stepwise exploration of Cox PH models  
-- Spline checks, interactions, and Weibull modeling  
-- Presentation‑oriented figures and diagnostics  
+This project demonstrates my progression from **academic survival‑analysis coursework** to a **professional, modular, reproducible analysis pipeline** implemented across **R, SAS, and Python**.  
 
-This version focused on learning statistical concepts, not engineering a reproducible workflow.
+The work began entirely in **R**, using exploratory, sequential scripts typical of graduate‑level coursework. After completing the academic version, I rebuilt the entire analysis into a **professional R pipeline**, then translated that pipeline into **SAS** to mirror clinical‑research workflows, and finally implemented the full workflow in **Python** to demonstrate cross‑platform reproducibility.
+
+Each version analyzes the same dataset and addresses the same statistical questions, but the **workflow, engineering discipline, and reproducibility** improve dramatically across stages.
 
 ---
 
-### **2. Professional Refactor — R Pipeline (Modular, Automated)**
-After completing the academic work, the entire analysis was rebuilt into a **professional R pipeline**:
+# Academic Version  
+### Exploratory, Sequential, Concept‑Focused (R)
 
-- Modular scripts (`01_load_data.R`, `02_clean_data.R`, etc.)  
-- Automated execution via a pipeline runner  
-- Tidyverse‑based data cleaning  
-- purrr‑driven model loops  
-- ggplot diagnostics and residual plots  
-- Structured model selection (AIC/BIC, PH tests, interactions)  
-- Reproducible outputs and standardized folder structure  
+The **academic** folder contains the original survival‑analysis work completed during graduate coursework. It includes:
 
-This version represents the first major step toward a production‑ready workflow.
+- A full written report  
+- Presentation slides  
+- Line‑by‑line R scripts  
+- Manual model fitting and diagnostics  
+- Stepwise exploration of Cox PH models, splines, interactions, and Weibull models  
+
+This version emphasizes **learning the methods**, understanding model behavior, and interpreting survival outcomes. It intentionally preserves the exploratory workflow typical of academic training.
 
 ---
 
-### **3. SAS Translation — Clinical‑Grade Workflow**
-The R pipeline was then **translated into SAS**, mirroring workflows used in clinical trials and regulatory submissions:
+# Professional Version — R, Python, SAS
+### Modular, Automated, Reproducible Pipeline
+
+The **professional R** folder contains a fully engineered survival‑analysis pipeline built after the academic work was completed. It restructures the entire analysis into a modern, production‑ready workflow:
+
+### **Pipeline Features**
+- Modular R scripts for each analytical step  
+- Automated execution via `run_pipeline.R`  
+- Reproducible outputs saved to standardized folders  
+- ggplot‑based diagnostics and residual plots  
+- Functional programming (`purrr`) for model loops  
+- Clean model‑selection workflow (AIC/BIC, PH tests, interactions)  
+- Case‑wise deletion diagnostics and influence analysis  
+- Parallel Cox and Weibull model comparison  
+
+This version demonstrates the ability to transform exploratory academic code into a **clinical‑grade R pipeline**.
+
+---
+
+# Professional Version — SAS  
+### Clinical‑Style, Regulatory‑Aligned Workflow
+
+The **professional SAS** version translates the R pipeline into a workflow aligned with clinical‑trial and regulatory environments:
 
 - `PROC IMPORT` and `DATA` steps for controlled data preparation  
 - `PROC PHREG` for Cox modeling and influence diagnostics  
@@ -48,83 +62,55 @@ The R pipeline was then **translated into SAS**, mirroring workflows used in cli
 - FitStatistics‑based AIC/BIC model comparison  
 - Case‑deletion and DFbeta influence analysis  
 
-The SAS version demonstrates the ability to implement survival analysis in a validated, audit‑ready environment.
+This version mirrors the structure and rigor expected in pharmaceutical and CRO settings.
 
 ---
 
-### **4. Python Implementation — Reproducible, Scripted Analytics**
-Finally, the pipeline was ported into **Python** using:
+# Professional Version — Python  
+### Modern, Scriptable, Cross‑Validated Analytics
+
+The **professional Python** version implements the entire workflow using:
 
 - `pandas` for data ingestion and cleaning  
-- `lifelines` for Cox PH and Weibull models  
-- `matplotlib` / `seaborn` for diagnostics  
+- `lifelines` for Cox PH, Weibull, and diagnostics  
+- `matplotlib` / `seaborn` for visualization  
 - Automated model loops and reproducible reporting  
+- Survival‑curve comparison between Cox and Weibull models  
 
-The Python version completes the cross‑language workflow and shows the ability to translate statistical logic across modern analytics ecosystems.
-
----
-
-## Pipeline Components (Implemented in R → SAS → Python)
-- **Data ingestion and formatting**  
-- **Data cleaning and preprocessing**  
-- **Kaplan–Meier estimation**  
-- **Cox proportional hazards modeling**  
-- **Spline, log, and quadratic transformations**  
-- **Interaction screening and model selection**  
-- **PH assumption diagnostics**  
-- **DFbeta and case‑deletion influence analysis**  
-- **Weibull regression and Cox–Weibull comparison**  
-- **Automated figure and table generation**  
-
-Each step is implemented consistently across all three languages to ensure analytical integrity.
+This version demonstrates the ability to translate statistical logic into modern analytics ecosystems.
 
 ---
 
-## Intended Use
-This professional version is designed for:
+# Cross‑Language Comparison  
+### Academic R → Professional R → SAS → Python
 
-- Reproducible research workflows  
-- Cross‑language validation (R → SAS → Python)  
-- Demonstrating industry‑aligned statistical programming practices  
-- Clinical‑style documentation and traceability  
-- Portfolio presentation of production‑ready survival analysis  
+| Analytical Component | **Academic R** | **Professional R** | **Professional SAS** | **Professional Python** |
+|----------------------|----------------|---------------------|------------------------|--------------------------|
+| **Data Import** | `read.csv()` | `readr::read_csv()` | `PROC IMPORT` | `pd.read_csv()` |
+| **Data Cleaning** | `mutate()` inline | Modular cleaning script | `DATA` step | `df.assign()`, `np.where()` |
+| **Factor Handling** | `factor()` | `forcats` utilities | `FORMAT` + `CLASS` | `astype('category')` |
+| **KM Estimation** | `survfit()` | Modular KM script | `PROC LIFETEST` | `KaplanMeierFitter()` |
+| **Cox PH Model** | `coxph()` | Pipeline‑based modeling | `PROC PHREG` | `CoxPHFitter()` |
+| **Residuals** | `residuals()` | ggplot diagnostics | `OUTPUT resmart=` | `compute_residuals()` |
+| **PH Assumption** | `cox.zph()` | Automated PH checks | `ASSESS PH` | `proportional_hazard_test()` |
+| **DFbeta Influence** | `residuals(type="dfbeta")` | Automated loops | `OUTPUT dfbeta=` | `compute_residuals("dfbeta")` |
+| **Splines** | `pspline()` | Modular spline script | `EFFECT spl=Spline()` | `patsy.bs()` or custom |
+| **Interactions** | `size*hormone_f` | purrr‑driven loops | `size*hormone_f` | Formula interactions |
+| **Weibull Model** | `survreg()` | Pipeline module | `PROC LIFEREG` | `WeibullAFTFitter()` |
+| **Model Selection** | Manual | AIC/BIC pipelines | FitStatistics | `.AIC_`, `.BIC_` |
+| **Visualization** | Base R | ggplot2 | SGPLOT | matplotlib / seaborn |
+| **Pipeline Automation** | None | `purrr::map()` | SAS macros | Python functions / loops |
 
----
-
-## Notes
-This pipeline is intentionally paired with the academic version to highlight the evolution from:
-
-- **Exploratory, presentation‑oriented R scripts** →  
-- **Modular R pipeline** →  
-- **Clinical‑grade SAS workflow** →  
-- **Reproducible Python implementation**
-
-This progression demonstrates:
-
-- mastery of survival analysis across platforms  
-- ability to translate statistical logic into production environments  
-- readiness for biostatistics, clinical research, and data science roles  
+This table highlights the engineering progression from exploratory R scripts to a fully cross‑validated, multi‑language survival‑analysis pipeline.
 
 ---
 
-# **Cross‑Language Function Comparison Table**  
-### *R → SAS → Python equivalents for your survival‑analysis pipeline*
+# Purpose of This Repository
 
-This table shows how each major analytical step in your project maps across the three languages you used.
+This project serves as:
 
-| Task / Concept | **R Function** | **SAS Procedure** | **Python (lifelines / pandas)** |
-|----------------|----------------|-------------------|----------------------------------|
-| Import CSV | `read_csv()` | `PROC IMPORT` | `pd.read_csv()` |
-| Data cleaning | `mutate()`, `case_when()` | `DATA` step | `df.assign()`, `np.where()` |
-| Factor variables | `factor()` | `FORMAT` + `CLASS` | `astype('category')` |
-| Kaplan–Meier | `survfit()` | `PROC LIFETEST` | `KaplanMeierFitter()` |
-| Cox PH model | `coxph()` | `PROC PHREG` | `CoxPHFitter()` |
-| Martingale residuals | `residuals(type="martingale")` | `OUTPUT resmart=` | `CoxPHFitter().compute_residuals(..., "martingale")` |
-| Schoenfeld PH test | `cox.zph()` | `ASSESS PH` | `check_assumptions()` |
-| DFbeta influence | `residuals(type="dfbeta")` | `OUTPUT dfbeta=` | `compute_residuals(..., "dfbeta")` |
-| Spline terms | `pspline()` | `EFFECT spl=Spline()` | `patsy.bs()` or custom spline basis |
-| Interaction terms | `size*hormone_f` | `size*hormone_f` | `'size:hormone_f'` in formula |
-| Weibull regression | `survreg(dist="weibull")` | `PROC LIFEREG` | `WeibullAFTFitter()` |
-| KM plots | `ggplot2` | `SGPLOT` | `matplotlib` / `seaborn` |
-| Model comparison | AIC/BIC via `extractAIC()` | FitStatistics table | `.AIC_`, `.BIC_` attributes |
-| Pipeline automation | `purrr::map()` | SAS macros | Python loops / functions |
+- A transparent record of my **growth** as a biostatistician and data scientist  
+- A demonstration of how academic work can be refactored into **industry‑aligned pipelines**  
+- A portfolio example of survival‑analysis modeling, diagnostics, and workflow engineering  
+- A showcase of **cross‑language mastery** (R => SAS => Python)  
+- A template for future projects following the same academic => professional => multi‑language structure  
