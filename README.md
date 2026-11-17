@@ -23,6 +23,37 @@ This structure highlights the progression from learning statistical methods to b
 
 ---
 
+## Installation
+
+```bash
+git clone https://github.com/niecestroa/pro-survival-modeling-lab.git
+
+cd pro-survival-modeling-lab
+
+pip install -r requirements.txt
+```
+
+## Skills Demonstrated
+
+- Survival Analysis
+- Time-to-Event Modeling
+- Cox Proportional Hazards Models
+- Kaplan-Meier Estimation
+- Weibull Regression
+- Hazard Function Analysis
+- Model Diagnostics
+- Proportional Hazards Testing
+- Clinical Data Analysis
+- Biostatistics
+- R Programming
+- SAS Programming
+- Python Programming
+- Reproducible Research
+- Statistical Modeling
+```
+
+---
+
 # **Project Evolution — Academic → Professional → Cross‑Language Pipelines**
 
 ## **1. Academic Foundations — R (Exploratory Coursework)**  
