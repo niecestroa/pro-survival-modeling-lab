@@ -50,7 +50,6 @@ pip install -r requirements.txt
 - Python Programming
 - Reproducible Research
 - Statistical Modeling
-```
 
 ---
 
@@ -198,12 +197,16 @@ All ASA Traveling Course components — RF‑SRC, VarPro, SGT, and RHF — are n
 
 # **Credits**
 
-### **ASA Traveling Course Contributors**
-- **Hemant Ishwaran, PhD** — University of Miami  
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 - **Min Lu, PhD** — University of Miami  
+
+### **ASA Traveling Course Contributors**
+- **Hemant Ishwaran, PhD** — University of Miami
 
 ### **Source Materials**
 - ASA Traveling Course Slide Guide  
 - randomForestSRC (CRAN)  
 - randomForestSRC.run (GitHub)  
-- varPro, randomForestSGT, randomForestRHF  
+- varPro, randomForestSGT, randomForestRHF
